@@ -12,7 +12,7 @@
 	          <Toolbar>
 	             <Title id="tiTasks" text="Tasks"> </Title>
 	             <ToolbarSpacer></ToolbarSpacer>
-	               <Button id="btnTasks" icon="sap-icon://task" type="Default" tooltip="Change to tasks">    </Button>
+	               <Button id="btnTasks" icon="sap-icon://task" type="Default" tooltip="Change to tasks" visible="false">    </Button>
 	               <Button id="btnTeam" icon="sap-icon://group" type="Default" tooltip="Change to team">     </Button>
 	               <Button icon="sap-icon://add" type="Emphasized" tooltop="Add"></Button>
 	          </Toolbar>
