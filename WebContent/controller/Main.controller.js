@@ -8,6 +8,7 @@ sap.ui.define([
         return Controller.extend("com.dudev.UI5C.controller.Main",{
     	
     	isMockRun: true,
+    	taskSelected = true,
 
             /**
          * Event that will be called when the view is initialized
@@ -47,7 +48,7 @@ sap.ui.define([
                
             },
             
-            onChangeTasks : function(){
+               onChangeTasks : function(){
 	        	   this.getView().byId("btnTasks").setVisible(false);
 	        	   this.getView().byId("btnTeam").setVisible(true);
 	        	   this.getView().byId("tiTasks").setText("Tasks");
@@ -63,8 +64,13 @@ sap.ui.define([
 	            	this.getView().byId("panTasks").setVisible(false);
 	            	this.getView().byId("panTeam").setVisible(true);
 	            	
+	            },
+	           
+	            onSearch : function()
+	            {
+	            	var data = this.getView().byId(txtSearch).getValue();
+	            	var oList = null;
 	            }
-	            
 	          
 
             });

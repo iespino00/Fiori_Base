@@ -19,7 +19,7 @@
 	        </headerToolbar> 
 	        
 	        <content>
-	     		<SearchField id="txtSearch" placeholder="Search">
+	     		<SearchField id="txtSearch" placeholder="Search" liveChange="onSearch">
 	     		</SearchField>   
 	        </content> 
         
