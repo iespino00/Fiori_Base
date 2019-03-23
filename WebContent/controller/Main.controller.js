@@ -29,6 +29,21 @@ sap.ui.define([
 	        	}else{
 	        		MessageToast.show("ToDo: Agregar llamado a WS de tareas");
 	        	     }
+            },
+            
+            _loadTeam: function()
+            {
+               var oController=this;
+               if(oController.isMockRun)
+            	   {
+            	   		$.getJSON("./model/mock/team.json" ,function(json){
+            	   		var oModel = new JSONModel(json);
+            	   		oController.getView().byId("tabTeam").setModel(oModel);
+            	   		});
+            	   }else{
+            		   MessageToast.show("ToDo: Agregar llamado a WS de equipo");
+            	   }
+               
             }
 
             });

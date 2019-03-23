@@ -9,6 +9,7 @@
             <Panel id="panTask" class="sapUiResponsiveMargin" width="auto">
 	            <content>
 	           		<Table id="tabTasks" items="{/Tasks}">
+	           		
 	           		  <columns>
 	           		    <Column>
 	           		      <Label text="Task" design="Bold"></Label>
@@ -27,7 +28,7 @@
 	           		  <items>
 	           		    <ColumnListItem type="Navigation" vAlign="Middle">
 	           		    	<cells>
-	           		    		<ObjectIdentifier title="{Name}" text="January 3rd 2019"></ObjectIdentifier>
+	           		    		<ObjectIdentifier title="{Name}" text="{Date}"></ObjectIdentifier>
 	           		    		<Image width="40px" src="{Photo}" tooltip="{User}" class="roundImage"></Image>
 	           		    		<ProgressIndicator percentValue="{Progress}" displayValue="{Progress}%"></ProgressIndicator>
 	           		    		<Text text ="{Status}"></Text>
@@ -38,11 +39,33 @@
 	           		</Table>
 	            </content>
             </Panel>
-            
+           
             <Panel id="panTeam" class="sapUIResponsiveMargin" width="auto">
-            
+	            <content>
+		            <Table id="tabTeam" items="{/Team}">
+		            
+		            	<columns>
+		            		<Column vAling="Middle">
+		            			<Label text="User" design="Bold"></Label>
+		            		</Column>
+		            	</columns>
+		            	
+		            	<items>
+		            		<ColumnListItem type="Navigation" vAlign="Middle">
+		            			<cells>
+		            			<l:HorizontalLayout>
+		            				<Image width="4opx" src="{Photo}" class="roundImage"></Image>
+		            				<ObjectIdentifier title="{Name}" text="Role"></ObjectIdentifier>
+		            				
+		            			</l:HorizontalLayout>
+		            			</cells>
+		            		</ColumnListItem>
+		            	</items>
+		            	
+		            </Table>
+	            </content>
             </Panel>
-        
+                   
         </content>
     </Page>
 </mvc:View>
