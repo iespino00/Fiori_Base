@@ -1,6 +1,7 @@
 <mvc:View
     controllerName="com.dudev.UI5C.controller.Main"
     xmlns="sap.m"
+    xmlns:dv="com.dudev.UI5C.control"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:f="sap.ui.layout.form"
     xmlns:l="sap.ui.layout">
@@ -50,7 +51,7 @@
 	           		    		<ObjectIdentifier title="{Name}" text="{Date}"></ObjectIdentifier>
 	           		    		<Image width="40px" src="{Photo}" tooltip="{User}" class="roundImage"></Image>
 	           		    		<ProgressIndicator percentValue="{Progress}" displayValue="{Progress}%"></ProgressIndicator>
-	           		    		<Text text ="{Status}"></Text>
+	           		    		<dv:DVStatus text="{Status}" color="{StatusColor}"></dv:DVStatus>
 	           		    	</cells> 	
 	           		    </ColumnListItem>
 	           
