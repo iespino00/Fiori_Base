@@ -23,11 +23,11 @@ sap.ui.define([
 		   //Methods
 		paint: function(){},
 	    renderer : function(oRm, oControl){
-	    	oRm.write('<div class="dvStatus" id="'+ oControl.getId()+'-dvStatus" style="background-color:black" ');
+	    	oRm.write('<div class="dvStatus" id="'+ oControl.getId()+'-dvStatus" style="background-color:'+ oControl.getColor() +'; " ');
 	    	oRm.writeControlData(oControl);
 	    	oRm.write('>');
 	    	
-	    	oRm.write('<p class="dvStatus-text" >In Progress</p>');
+	    	oRm.write('<p class="dvStatus-text" >'+ oControl.getText() +'</p>');
 	    	oRm.write('</div>');
 	    }	
 	  });
