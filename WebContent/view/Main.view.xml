@@ -8,7 +8,7 @@
         <content>
             <Panel id="panTask" class="sapUiResponsiveMargin" width="auto">
 	            <content>
-	           		<Table id="tabTasks">
+	           		<Table id="tabTasks" items="{/Tasks}">
 	           		  <columns>
 	           		    <Column>
 	           		      <Label text="Task" design="Bold"></Label>
@@ -27,10 +27,10 @@
 	           		  <items>
 	           		    <ColumnListItem type="Navigation" vAlign="Middle">
 	           		    	<cells>
-	           		    		<ObjectIdentifier title="Code Review" text="January 3rd 2019"></ObjectIdentifier>
-	           		    		<Image width="40px" src="./images/nora.jpg" tooltip="Nora" class="roundImage"></Image>
-	           		    		<ProgressIndicator percentValue="70" displayValue="70%"></ProgressIndicator>
-	           		    		<Text text ="In progress"></Text>
+	           		    		<ObjectIdentifier title="{Name}" text="January 3rd 2019"></ObjectIdentifier>
+	           		    		<Image width="40px" src="{Photo}" tooltip="{User}" class="roundImage"></Image>
+	           		    		<ProgressIndicator percentValue="{Progress}" displayValue="{Progress}%"></ProgressIndicator>
+	           		    		<Text text ="{Status}"></Text>
 	           		    	</cells> 	
 	           		    </ColumnListItem>
 	           
