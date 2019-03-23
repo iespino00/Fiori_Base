@@ -21,7 +21,12 @@ sap.ui.define([
 		        	                     }
 		                   },
 		   //Methods
-		paint: function(){},
+		paint: function(){
+			var oControl = this;
+			$('#'+ oControl.getId() +'-dvStatus').css("background-color", oControl.getColor());
+			$('#'+ oControl.getId() +'-dvStatus p').text(oControl.getText());
+		},
+		
 	    renderer : function(oRm, oControl){
 	    	oRm.write('<div class="dvStatus" id="'+ oControl.getId()+'-dvStatus" style="background-color:'+ oControl.getColor() +'; " ');
 	    	oRm.writeControlData(oControl);
