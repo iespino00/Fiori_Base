@@ -8,7 +8,7 @@ sap.ui.define([
         return Controller.extend("com.dudev.UI5C.controller.Main",{
     	
     	isMockRun: true,
-    	taskSelected = true,
+    	taskSelected : true,
 
             /**
          * Event that will be called when the view is initialized
@@ -70,7 +70,7 @@ sap.ui.define([
 	           
 	            onSearch : function()
 	            {
-	            	var data = this.getView().byId(txtSearch).getValue();
+	            	var data = this.getView().byId("txtSearch").getValue();
 	            	var oList = null;
 	            	
 	            	if(this.tasksSelected)
