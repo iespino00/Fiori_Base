@@ -1,0 +1,64 @@
+{
+	"Tasks" : [
+		{
+		"Code" : "TASK1",
+		"Name" : "Design customers screen",
+		"Date" : "January 3rd, 2019",
+		"User" : "Jane Appleseed",
+		"Photo" : "./images/user1.png",
+		"Status" : "Completed",
+		"StatusColor" : "#009966",
+		"Progress" : 100
+		},
+		{
+		"Code" : "TASK2",
+		"Name" : "Schedule a meeting with the customer",
+		"Date" : "January 10th, 2019",
+		"User" : "David Collen",
+		"Photo" : "./images/user3.jpg",
+		"Status" : "Pending",
+		"StatusColor" : "#f7c13a",
+		"Progress" : 0
+		},
+		{
+		"Code" : "TASK3",
+		"Name" : "Design web leads module",
+		"Date" : "January 4th, 2019",
+		"User" : "Kristin Oliver",
+		"Photo" : "./images/user2.jpg",
+		"Status" : "In Progress",
+		"StatusColor" : "#427CAC",
+		"Progress" : 20
+		},
+		{
+		"Code" : "TASK4",
+		"Name" : "Transport changes to production",
+		"Date" : "February 3rd, 2019",
+		"User" : "Patrick Herrera",
+		"Photo" : "./images/user6.jpg",
+		"Status" : "Completed",
+		"StatusColor" : "#009966",
+		"Progress" : 100
+		},	
+		{
+		"Code" : "TASK5",
+		"Name" : "Code review",
+		"Date" : "January 3rd, 2019",
+		"User" : "Nora Hill",
+		"Photo" : "./images/user4.jpg",
+		"Status" : "In Progress",
+		"StatusColor" : "#427CAC",
+		"Progress" : 90
+		},		
+		{
+		"Code" : "TASK6",
+		"Name" : "Perform integration tests",
+		"Date" : "February 2nd, 2019",
+		"User" : "Chris Howell",
+		"Photo" : "./images/user5.jpg",
+		"Status" : "Pending",
+		"StatusColor" : "#f7c13a",
+		"Progress" : 0
+		}
+	]
+}

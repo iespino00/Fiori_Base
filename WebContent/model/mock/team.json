@@ -1,0 +1,40 @@
+{
+	"Team" : [
+		{
+		"Code" : "USER1",
+		"Name" : "Jane Appleseed",
+		"Role" : "Lead Designer",
+		"Photo" : "./images/user1.png"
+		},
+		{
+		"Code" : "USER2",
+		"Name" : "Kristin Oliver",
+		"Role" : "Full stack developer",
+		"Photo" : "./images/user2.jpg"
+		},
+		{
+		"Code" : "USER3",
+		"Name" : "David Collen",
+		"Role" : "Project Manager",
+		"Photo" : "./images/user3.jpg"
+		},
+		{
+		"Code" : "USER4",
+		"Name" : "Nora Hill",
+		"Role" : "Front end developer",
+		"Photo" : "./images/user4.jpg"
+		},
+		{
+		"Code" : "USER5",
+		"Name" : "Chris Howell",
+		"Role" : "Lead Test",
+		"Photo" : "./images/user5.jpg"
+		},
+		{
+		"Code" : "USER6",
+		"Name" : "Patrick Herrera",
+		"Role" : "Back end developer",
+		"Photo" : "./images/user6.jpg"
+		}
+	]
+}
