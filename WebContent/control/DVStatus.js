@@ -23,7 +23,7 @@ sap.ui.define([
 		   //Methods
 		paint: function(){},
 	    renderer : function(oRm, oControl){
-	    	oRm.write('<div class="dvStatus" id="id-dvStatus" style="background-color:black" ');
+	    	oRm.write('<div class="dvStatus" id="'+ oControl.getId()+'-dvStatus" style="background-color:black" ');
 	    	oRm.writeControlData(oControl);
 	    	oRm.write('>');
 	    	
