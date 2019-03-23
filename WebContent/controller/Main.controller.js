@@ -7,13 +7,14 @@ sap.ui.define([
 
         return Controller.extend("com.dudev.UI5C.controller.Main",{
     	
-    	isMockRun: false,
+    	isMockRun: true,
 
             /**
          * Event that will be called when the view is initialized
          */
         onInit : function(){
         	this._loadTasks();
+        	this._loadTeam();
         },
            /*Funcion para cambiar tareas*/
            _loadTasks: function()

@@ -45,7 +45,7 @@
 		            <Table id="tabTeam" items="{/Team}">
 		            
 		            	<columns>
-		            		<Column vAling="Middle">
+		            		<Column vAlign="Middle">
 		            			<Label text="User" design="Bold"></Label>
 		            		</Column>
 		            	</columns>
@@ -54,8 +54,8 @@
 		            		<ColumnListItem type="Navigation" vAlign="Middle">
 		            			<cells>
 		            			<l:HorizontalLayout>
-		            				<Image width="4opx" src="{Photo}" class="roundImage"></Image>
-		            				<ObjectIdentifier title="{Name}" text="Role"></ObjectIdentifier>
+		            				<Image width="40px" src="{Photo}" class="roundImage"></Image>
+		            				<ObjectIdentifier title="{Name}" text="Role" class="sapUiSmallMarginBegin"></ObjectIdentifier>
 		            				
 		            			</l:HorizontalLayout>
 		            			</cells>
