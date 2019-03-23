@@ -14,7 +14,7 @@ sap.ui.define([
          */
         onInit : function(){
         	this._loadTasks();
-        	this._loadTeam();
+        	this._loadTeam(); //Ejecutar funcion para cargar JSON del team
         },
            /*Funcion para cambiar tareas*/
            _loadTasks: function()
