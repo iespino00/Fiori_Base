@@ -59,7 +59,7 @@
 	            </content>
             </Panel>
            
-            <Panel id="panTeam" class="sapUIResponsiveMargin" width="auto">
+            <Panel id="panTeam" class="sapUIResponsiveMargin" width="auto" visible="false">
 	            <content>
 		            <Table id="tabTeam" items="{/Team}">
 		            
