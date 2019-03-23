@@ -73,7 +73,7 @@ sap.ui.define([
 	            	var data = this.getView().byId("txtSearch").getValue();
 	            	var oList = null;
 	            	
-	            	if(this.tasksSelected)
+	            	if(this.taskSelected)
 	            		{
 	            		oList = this.getView().byId("tabTasks");
 	            		}
