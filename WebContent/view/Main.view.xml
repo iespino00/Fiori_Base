@@ -12,7 +12,7 @@
 	          <Toolbar>
 	             <Title id="tiTasks" text="Tasks"> </Title>
 	             <ToolbarSpacer></ToolbarSpacer>
-	               <Button id="btnTasks" icon="sap-icon://task" type="Default" tooltip="Change to tasks" visible="false">    </Button>
+	               <Button id="btnTasks" icon="sap-icon://task" type="Default" tooltip="Change to tasks" visible="false" press="onChangeTasks">    </Button>
 	               <Button id="btnTeam" icon="sap-icon://group" type="Default" tooltip="Change to team" press="onChangeTeam">     </Button>
 	               <Button icon="sap-icon://add" type="Emphasized" tooltip="Add"></Button>
 	          </Toolbar>
@@ -25,7 +25,7 @@
         
         </Panel>
         
-            <Panel id="panTask" class="sapUiResponsiveMargin" width="auto">
+            <Panel id="panTasks" class="sapUiResponsiveMargin" width="auto">
 	            <content>
 	           		<Table id="tabTasks" items="{/Tasks}">
 	           		

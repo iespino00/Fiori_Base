@@ -47,10 +47,25 @@ sap.ui.define([
                
             },
             
+            onChangeTasks : function(){
+	        	   this.getView().byId("btnTasks").setVisible(false);
+	        	   this.getView().byId("btnTeam").setVisible(true);
+	        	   this.getView().byId("tiTasks").setText("Tasks");
+	        	   this.getView().byId("panTeam").setVisible(false);
+	        	   this.getView().byId("panTasks").setVisible(true);
+	        	   
+	           },
+            
 	            onChangeTeam : function(){
 	            	this.getView().byId("btnTeam").setVisible(false);
 	            	this.getView().byId("btnTasks").setVisible(true);
+	            	this.getView().byId("tiTasks").setText("Team");
+	            	this.getView().byId("panTasks").setVisible(false);
+	            	this.getView().byId("panTeam").setVisible(true);
+	            	
 	            }
+	            
+	          
 
             });
 
