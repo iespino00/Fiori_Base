@@ -45,7 +45,12 @@ sap.ui.define([
             		   MessageToast.show("ToDo: Agregar llamado a WS de equipo");
             	   }
                
-            }
+            },
+            
+	            onChangeTeam : function(){
+	            	this.getView().byId("btnTeam").setVisible(false);
+	            	this.getView().byId("btnTasks").setVisible(true);
+	            }
 
             });
 

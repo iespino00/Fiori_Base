@@ -14,7 +14,7 @@
 	             <ToolbarSpacer></ToolbarSpacer>
 	               <Button id="btnTasks" icon="sap-icon://task" type="Default" tooltip="Change to tasks" visible="false">    </Button>
 	               <Button id="btnTeam" icon="sap-icon://group" type="Default" tooltip="Change to team" press="onChangeTeam">     </Button>
-	               <Button icon="sap-icon://add" type="Emphasized" tooltop="Add"></Button>
+	               <Button icon="sap-icon://add" type="Emphasized" tooltip="Add"></Button>
 	          </Toolbar>
 	        </headerToolbar> 
 	        
