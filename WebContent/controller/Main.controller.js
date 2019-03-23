@@ -54,6 +54,7 @@ sap.ui.define([
 	        	   this.getView().byId("tiTasks").setText("Tasks");
 	        	   this.getView().byId("panTeam").setVisible(false);
 	        	   this.getView().byId("panTasks").setVisible(true);
+	        	   this.taskSelected = false;
 	        	   
 	           },
             
@@ -63,6 +64,7 @@ sap.ui.define([
 	            	this.getView().byId("tiTasks").setText("Team");
 	            	this.getView().byId("panTasks").setVisible(false);
 	            	this.getView().byId("panTeam").setVisible(true);
+	            	 this.taskSelected = true;
 	            	
 	            },
 	           
@@ -70,6 +72,14 @@ sap.ui.define([
 	            {
 	            	var data = this.getView().byId(txtSearch).getValue();
 	            	var oList = null;
+	            	
+	            	if(this.tasksSelected)
+	            		{
+	            		oList = this.getView().byId("tabTasks");
+	            		}
+		            	else{
+		            		oList = this.getView().byId("tabTeam");	
+		            		}
 	            }
 	          
 
