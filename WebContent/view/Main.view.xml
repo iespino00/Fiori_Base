@@ -37,10 +37,10 @@
 	           		    <Column hAlign="Center">
 	           		      <Label text="Assigned To" design="Bold"></Label>
 	           		    </Column>
-	           		    <Column>
+	           		    <Column minScreenWidth="Tablet" vAlign="Middle" hAlign="Center">
 	           		      <Label text="Progress" design="Bold"></Label>
 	           		    </Column>
-	           		    <Column>
+	           		    <Column minScreenWidth="Desktop" vAlign="Middle" hAlign="Center">
 	           		      <Label text="Status" design="Bold"></Label>
 	           		    </Column>
 	           		  </columns>
