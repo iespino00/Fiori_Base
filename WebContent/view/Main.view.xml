@@ -38,6 +38,11 @@
 	           		</Table>
 	            </content>
             </Panel>
+            
+            <Panel id="panTeam" class="sapUIResponsiveMargin" width="auto">
+            
+            </Panel>
+        
         </content>
     </Page>
 </mvc:View>
