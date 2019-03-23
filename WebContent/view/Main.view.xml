@@ -6,6 +6,16 @@
     xmlns:l="sap.ui.layout">
     <Page showHeader="true" title="{i18n>appTitle}" class="whitePage">
         <content>
+        <Panel class="sapUiResponsiveMargin" width="auto">
+	        <headerToolbar class="sapUiSmallMarginTop">
+	          <Toolbar>
+	             <Title id="tiTasks" text="Tasks"> </Title>
+	             <ToolbarSpacer></ToolbarSpacer>
+	               <Button id="btnTasks" icon="sap-icon://task" type="Default" tooltip="Change to tasks">    </Button>
+	          </Toolbar>
+	        </headerToolbar>  
+        </Panel>
+        
             <Panel id="panTask" class="sapUiResponsiveMargin" width="auto">
 	            <content>
 	           		<Table id="tabTasks" items="{/Tasks}">
