@@ -7,14 +7,22 @@
     <Page showHeader="true" title="{i18n>appTitle}" class="whitePage">
         <content>
         <Panel class="sapUiResponsiveMargin" width="auto">
+	        
 	        <headerToolbar class="sapUiSmallMarginTop">
 	          <Toolbar>
 	             <Title id="tiTasks" text="Tasks"> </Title>
 	             <ToolbarSpacer></ToolbarSpacer>
 	               <Button id="btnTasks" icon="sap-icon://task" type="Default" tooltip="Change to tasks">    </Button>
 	               <Button id="btnTeam" icon="sap-icon://group" type="Default" tooltip="Change to team">     </Button>
+	               <Button icon="sap-icon://add" type="Emphasized" tooltop="Add"></Button>
 	          </Toolbar>
-	        </headerToolbar>  
+	        </headerToolbar> 
+	        
+	        <content>
+	     		<SearchField id="txtSearch" placeholder="Search">
+	     		</SearchField>   
+	        </content> 
+        
         </Panel>
         
             <Panel id="panTask" class="sapUiResponsiveMargin" width="auto">
