@@ -80,6 +80,12 @@ sap.ui.define([
 		            	else{
 		            		oList = this.getView().byId("tabTeam");	
 		            		}
+	            	
+	                var oBinding = oList.getBinding("items");
+	                
+	                oBinding.filter([new sap.ui.model.Filter([
+	                	new sap.ui.model.Filter("Name", sap.ui.model.FilterOperator.Contains, data) // en data va la informacion que va filtrando
+	                ], false)]); //false nos obliga a que todas las condiciones se cumplan para que se filtre
 	            }
 	          
 
