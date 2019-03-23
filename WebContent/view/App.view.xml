@@ -1,0 +1,13 @@
+<mvc:View	
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:layout="sap.ui.layout"
+	displayBlock="true">
+
+	<App id="UI5CApp" class="UI5C">
+		<pages>
+			<mvc:XMLView viewName="com.dudev.UI5C.view.Main"/>
+		</pages>
+	</App>
+
+</mvc:View>

@@ -1,0 +1,43 @@
+<mvc:View
+    controllerName="com.dudev.UI5C.controller.Main"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout">
+    <Page showHeader="true" title="{i18n>appTitle}" class="whitePage">
+        <content>
+            <Panel id="panTask" class="sapUiResponsiveMargin" width="auto">
+	            <content>
+	           		<Table id="tabTasks">
+	           		  <columns>
+	           		    <Column>
+	           		      <Label text="Task" design="Bold"></Label>
+	           		    </Column>
+	           		    <Column hAlign="Center">
+	           		      <Label text="Assigned To" design="Bold"></Label>
+	           		    </Column>
+	           		    <Column>
+	           		      <Label text="Progress" design="Bold"></Label>
+	           		    </Column>
+	           		    <Column>
+	           		      <Label text="Status" design="Bold"></Label>
+	           		    </Column>
+	           		  </columns>
+	           		  
+	           		  <items>
+	           		    <ColumnListItem type="Navigation" vAlign="Middle">
+	           		    	<cells>
+	           		    		<ObjectIdentifier title="Code Review" text="January 3rd 2019"></ObjectIdentifier>
+	           		    		<Image width="40px" src="./images/nora.jpg" tooltip="Nora" class="roundImage"></Image>
+	           		    		<ProgressIndicator percentValue="70" displayValue="70%"></ProgressIndicator>
+	           		    		<Text text ="In progress"></Text>
+	           		    	</cells> 	
+	           		    </ColumnListItem>
+	           
+	           		  </items>
+	           		</Table>
+	            </content>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>

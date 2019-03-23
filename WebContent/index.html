@@ -1,0 +1,39 @@
+<!DOCUMENT html>
+<html>
+	<head>
+		<title>UI5 Course</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script 
+			id="sap-ui-bootstrap"
+			src="resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-preload="async"
+			data-sap-ui-resourceroots='{ "com.dudev.UI5C" : "./" }'></script>
+
+		<script>
+			//Do something right after the library has finished loading
+			sap.ui.getCore().attachInit(function(){
+
+
+				new sap.m.Shell({
+					app : new sap.ui.core.ComponentContainer({
+						name : "com.dudev.UI5C",
+						height: "100%"
+					})
+				}).placeAt("content");
+			
+
+			});
+
+		</script>
+
+	</head>
+	<body class="sapUiBody" id="content">
+		
+		
+	</body>
+</html>
