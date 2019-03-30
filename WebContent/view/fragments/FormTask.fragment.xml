@@ -55,9 +55,9 @@
                       <l:VerticalLayout>
                         <Label text="Status"/>
                           <ComboBox id="cbStatusFTask" width="100%">
-                              <core:Item key="1" text="In Progress"/>
-                              <core:Item key="2" text="Stuck"/>
-                              <core:Item key="3" text="Completed"/>
+                              <core:Item key="001" text="In Progress"/>
+                              <core:Item key="002" text="Stuck"/>
+                              <core:Item key="003" text="Completed"/>
                           </ComboBox>
                             <l:layoutData>
                              <l:GridData span="L6 M6 S12"/>
