@@ -90,7 +90,8 @@ sap.ui.define([
 	            
 	            //Funciones de Formulario
 	            onOpenForm: function(){
-	            	
+	            	var oDialog = this._getFormDialog();
+	            	oDialog.open();
 	            	
 	            },
 	            
