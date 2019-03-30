@@ -165,9 +165,10 @@ sap.ui.define([
 			                }).done(function(oResponse)
 			                		{
 			                	var oModel = new JSONModel(oResponse);
-			                	MessageToas.show(oResponse.text); // en un message se mostrara la respuesta del servidor
-			                	
-			                	oController.onCloseForm
+			                	MessageToast.show(oResponse.message.code); // en un message se mostrara la respuesta del servidor
+			                		oController.onCloseForm()
+			                		
+			                	oController._loadTasks(); // recargando la tarea
 			                        }).fail(function(){
 			                    //Handle errors
 			                }).always(function(){
