@@ -5,6 +5,13 @@
 	  xmlns:core="sap.ui.core">
 
 <Dialog title="Add Task" contentWidth="500px" icon="sap-ico://task">
+<content>
+  <Panel>
+  	<content>
+  	 
+  	</content>
+  </Panel>
+</content>
 
 </Dialog>
 </core:FragmentDefinition>
