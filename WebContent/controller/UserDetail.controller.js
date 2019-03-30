@@ -12,6 +12,14 @@ sap.ui.define([
         onInit : function(){
 
                     },
-    });
+                    
+                    
+        onBack : function()
+         {
+           var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+           oRouter.navTo("mainRoute",null,true); //No conservar el historial
+         }
+    
+     });
 
     });
