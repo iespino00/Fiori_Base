@@ -48,6 +48,12 @@
 		  "bundleName": "com.dudev.UI5C.i18n.i18n"
 		}
 	  }
-	}
+	},
+	
+	"routing": {
+	           "config": {},
+	           "routes" : {},
+	           "targets" : {} 
+	           }
   }
 }
