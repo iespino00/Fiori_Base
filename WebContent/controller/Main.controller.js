@@ -201,6 +201,10 @@ sap.ui.define([
             		  this.getView().addDependent(this._oDetailDialog); //Aparecera sobre esta vista.
             		}
             	    return this._oDetailDialog;
+	            },
+	            
+	            onCloseDetail: function(){
+	           	 this._getDetailDialog().close();
 	            }
 	            
 	          
