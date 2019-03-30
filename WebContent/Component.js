@@ -18,6 +18,10 @@ sap.ui.define([
             //Call the parent init method
 			UIComponent.prototype.init.apply(this, arguments);
             
+			
+			//inicializar la navegación
+			this.getRouter().initialize();
+			
             var oModel = new JSONModel(Device);
             this.setModel(oModel, "deviceData");
 			
