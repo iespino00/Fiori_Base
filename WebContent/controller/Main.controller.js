@@ -107,6 +107,10 @@ sap.ui.define([
 	            		  this.getView().addDependent(this._oFormDialog); //Aparecera sobre esta vista.
 	            		}
 	            	return this._oFormDialog;
+	            },
+	            
+	            onCloseForm: function(){
+	            	this._getFormDialog().Close();
 	            }
 	            
 	          
