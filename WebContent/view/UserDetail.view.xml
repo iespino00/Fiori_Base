@@ -29,6 +29,17 @@
                     </layout:VerticalLayout>
                 </headerContent>
 
+				<sections>
+					<ObjectPageSection title="Task">
+					  <subSections>
+					    <ObjectPageSubSection>
+					       <blocks>
+					       	<m:Text text="Mostrar tabla de tareas"></m:Text>
+					       </blocks>
+					    </ObjectPageSubSection>
+					  </subSections>
+					</ObjectPageSection>
+				</sections>
 
              </ObjectPageLayout>
 			
