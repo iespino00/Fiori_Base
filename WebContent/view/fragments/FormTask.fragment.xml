@@ -18,6 +18,11 @@
   	        <f:formContainers>
   	          <f:FormContainer>
   	            <f:formElements>
+  	              <f:FormElement>
+  	                <l:VerticalLayout>
+  	                
+  	                </l:VerticalLayout>
+  	              </f:FormElement>
   	            </f:formElements>
   	          </f:FormContainer>
   	        </f:formContainers>
