@@ -179,7 +179,8 @@ sap.ui.define([
 	            },
 	            
 	            // Funciones de Detalle
-	            onSelectTask: function (task){
+	            onSelectTask: function (task)
+	            {
 	            	
 	            }
 	            
