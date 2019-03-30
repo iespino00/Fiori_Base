@@ -18,6 +18,7 @@
   	          <f:FormContainer>
   	          
   	            <f:formElements>
+  	            
   	              <f:FormElement>
   	                <l:VerticalLayout>
   	                  <Label text="Title"></Label>
@@ -27,20 +28,19 @@
   	                  </l:layoutData>
   	                </l:VerticalLayout>
   	              </f:FormElement>
-  	            </f:formElements>
-  	            
-  	            
-  	            <f:formElements>
+  	              
   	              <f:FormElement>
   	                <l:VerticalLayout>
   	                  <Label text="User"></Label>
-  	                 <Combobox id="cbUserFTask" width="100%" intes="{/Team}">
+  	                 <Combobox id="cbUserFTask" width="100%" items="{/Team}">
+  	                 <core:Item key="{Code}" text="{Name}"></core:Item>
   	                 </Combobox>
   	                  <l:layoutData>
   	                    <l:GridData span="L6 M6 S12"></l:GridData>
   	                  </l:layoutData>
   	                </l:VerticalLayout>
   	              </f:FormElement>
+  	              
   	            </f:formElements>
   	            
   	          </f:FormContainer>
