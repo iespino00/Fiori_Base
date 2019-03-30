@@ -95,5 +95,10 @@
   </Panel>
 </content>
 
+         <buttons>
+            <Button text="Save" press="onConfirmForm" type="Accept"/>
+            <Button text="Cancel" press="onCloseForm" type="Default"/>
+        </buttons>
+
 </Dialog>
 </core:FragmentDefinition>
