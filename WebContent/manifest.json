@@ -69,7 +69,7 @@
 			                       "target":"main"
 		                       },
 		                       {
-			                       "pattern":"userDetail",
+			                       "pattern":"userDetail/{code}",
 			                       "name":"userDetailRoute",
 			                       "target":"userDetail"
 		                       }
