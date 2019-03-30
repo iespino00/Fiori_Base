@@ -110,7 +110,7 @@ sap.ui.define([
 	            },
 	            
 	            onCloseForm: function(){
-	            	this._getFormDialog().Close();
+	            	this._getFormDialog().close();
 	            }
 	            
 	          
