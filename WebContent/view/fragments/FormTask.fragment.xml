@@ -10,7 +10,13 @@
   	<content>
   	 <l:VerticalLayout width="100%">
   	    <l:content>
-  	      
+  	      <f:Form editable="true">
+  	        <f:layout>
+  	          <f:ResponsiveGridLayout>
+  	          
+  	          </f:ResponsiveGridLayout>
+  	        </f:layout>
+  	      </f:Form>
   	    </l:content>
   	 </l:VerticalLayout>
   	</content>
