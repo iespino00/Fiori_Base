@@ -7,7 +7,7 @@
     xmlns:dv="com.dudev.UI5C.control">
     <m:Page showHeader="true" title="Project Management" class="whitePage" showNavButton="true" navButtonPress="onBack">
         <m:content>
-			<Text text="TEXTO DE DETALLE TEST"></Text>
+			<m:Text text="TEXTO DE DETALLE TEST"></m:Text>
         </m:content>
     </m:Page>
 </core:View>
