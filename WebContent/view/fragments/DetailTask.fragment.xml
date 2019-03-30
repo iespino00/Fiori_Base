@@ -28,14 +28,14 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                                                               <Label text="Assigned To:" design="Bold"/>
+                                    <Label text="Assigned To:" design="Bold"/>
                                     <Image class="showContentOnRight roundImage" width="40px" src="{/Photo}" tooltip="{User}"/>
                                 </cells>
                             </ColumnListItem>
 
-                                                        <ColumnListItem>
+                            <ColumnListItem>
                                 <cells>
-                                                                               <Label text="Progress:" design="Bold"/>
+                                    <Label text="Progress:" design="Bold"/>
                                     <ObjectNumber class="showContentOnRight" number="{/Progress}" unit="%"/>
                                 </cells>
                             </ColumnListItem>

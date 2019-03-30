@@ -10,3 +10,8 @@
 .sapMPIBarNeutral{
 	background: #346187 !important; 
 }
+
+.showContentOnRight{
+    float: right;
+    margin-right: 20px;
+}
