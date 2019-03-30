@@ -179,9 +179,28 @@ sap.ui.define([
 	            },
 	            
 	            // Funciones de Detalle
-	            onSelectTask: function (task)
+	            onSelectTask: function (oEvent)
 	            {
 	            	
+	            	var oObject = oEvent.getSource().getBindingContext().getObject();
+	            	var oModel = new JSONModel(oObject);
+	            	
+	            	var oDialog = this._getDetailDialog();
+	            	oDialog.open();
+	            	oDialog.setModel(oModel);
+	            	sap.ui.getCore().byId("stTaskStatus").paint();
+	            	
+	            },
+	            
+	            //Funcion para obtener el detalle
+	            _getDetailDialog: function()
+	            {
+	            	if(!this._oDetailDialog)
+            		{
+            		  this._oDetailDialog = sap.ui.xmlfragment("com.dudev.UI5C.view.fragments.DetailTask", this);
+            		  this.getView().addDependent(this._oDetailDialog); //Aparecera sobre esta vista.
+            		}
+            	    return this._oDetailDialog;
 	            }
 	            
 	          

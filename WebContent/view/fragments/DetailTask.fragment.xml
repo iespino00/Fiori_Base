@@ -1,0 +1,51 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:dv="com.dudev.UI5C.control"
+    xmlns:core = "sap.ui.core">
+    <Dialog title="Task" contentWidth="500px" icon="sap-icon://task">
+        <content>
+            <Panel>
+                <content>
+                    <l:HorizontalLayout>
+                        <Image width="40px" src="./images/icon-task.png"/>
+                        <ObjectIdentifier title="{/Name}" text="{/Date}" class="sapUiTinyMarginBegin"/>
+                    </l:HorizontalLayout>
+                    <l:VerticalLayout class="showContentOnRight sapUiMediumMarginTop">
+                        <l:content>
+                            <dv:DVStatus id="stTaskStatus" text="{/Status}" color="{/StatusColor}"/>
+                        </l:content>
+                    </l:VerticalLayout>
+                 </content>
+            </Panel>
+            <Panel>
+                <content>
+                    <Table>
+                                                        <columns>
+                            <Column vAlign="Middle"/>
+                            <Column  minScreenWidth="400px" demandPopin="true"/>
+                                                       </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                                                               <Label text="Assigned To:" design="Bold"/>
+                                    <Image class="showContentOnRight roundImage" width="40px" src="{/Photo}" tooltip="{User}"/>
+                                </cells>
+                            </ColumnListItem>
+
+                                                        <ColumnListItem>
+                                <cells>
+                                                                               <Label text="Progress:" design="Bold"/>
+                                    <ObjectNumber class="showContentOnRight" number="{/Progress}" unit="%"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </content>
+            </Panel>
+        </content>
+        <buttons>
+            <Button text="Close" press="onCloseDetail" type="Default"/>
+        </buttons>
+    </Dialog>
+</core:FragmentDefinition>
