@@ -20,7 +20,8 @@
   	            <f:formElements>
   	              <f:FormElement>
   	                <l:VerticalLayout>
-  	                
+  	                  <Label text="Title"></Label>
+  	                  <input id="txtTitleFTask"></input>
   	                </l:VerticalLayout>
   	              </f:FormElement>
   	            </f:formElements>
