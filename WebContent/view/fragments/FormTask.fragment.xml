@@ -12,10 +12,12 @@
   	    <l:content>
   	      <f:Form editable="true">
   	        <f:layout>
-  	          <f:ResponsiveGridLayout>
-  	          
-  	          </f:ResponsiveGridLayout>
+  	          <f:ResponsiveGridLayout></f:ResponsiveGridLayout>
   	        </f:layout>
+  	        
+  	        <f:formContainers>
+  	        
+  	        </f:formContainers>
   	      </f:Form>
   	    </l:content>
   	 </l:VerticalLayout>
