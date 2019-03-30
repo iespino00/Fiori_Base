@@ -216,7 +216,9 @@ sap.ui.define([
 	                //Esperar 300 milisegundos
 	                setTimeout(function(){
 	                	                var oRouter = sap.ui.core.UIComponent.getRouterFor(oController); // Obteniendo el Router
-	                	                 oRouter.navTo("userDetailRoute");
+	                	                 oRouter.navTo("userDetailRoute",{
+	                	                	                              code : oObject.Code //Codigo del Usuario Seleccionado
+	                	                	                             });
 	                                     }, 300);
 	            }
 	            
