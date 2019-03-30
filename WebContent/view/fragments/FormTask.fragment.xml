@@ -14,23 +14,37 @@
   	        <f:layout>
   	          <f:ResponsiveGridLayout></f:ResponsiveGridLayout>
   	        </f:layout>
-  	        
   	        <f:formContainers>
   	          <f:FormContainer>
+  	          
   	            <f:formElements>
   	              <f:FormElement>
   	                <l:VerticalLayout>
   	                  <Label text="Title"></Label>
-  	                  <input id="txtTitleFTask" maxLength="50"></input>
+  	                  <Input id="txtTitleFTask" maxLength="50"></Input>
   	                  <l:layoutData>
   	                    <l:GridData span="L6 M6 S12"></l:GridData>
   	                  </l:layoutData>
   	                </l:VerticalLayout>
   	              </f:FormElement>
   	            </f:formElements>
+  	            
+  	            
+  	            <f:formElements>
+  	              <f:FormElement>
+  	                <l:VerticalLayout>
+  	                  <Label text="User"></Label>
+  	                 <Combobox id="cbUserFTask" width="100%" intes="{/Team}">
+  	                 </Combobox>
+  	                  <l:layoutData>
+  	                    <l:GridData span="L6 M6 S12"></l:GridData>
+  	                  </l:layoutData>
+  	                </l:VerticalLayout>
+  	              </f:FormElement>
+  	            </f:formElements>
+  	            
   	          </f:FormContainer>
-  	        </f:formContainers>
-  	      
+  	        </f:formContainers>      
   	      </f:Form>
   	    </l:content>
   	 </l:VerticalLayout>
