@@ -38,16 +38,16 @@ sap.ui.define([
             _loadTeam: function()
             {
                var oController=this;
-               if(oController.isMockRun)
-            	   {
+           //    if(oController.isMockRun)
+           // 	   {
             	   		$.getJSON("./model/mock/team.json" ,function(json){
             	   		var oModel = new JSONModel(json);
             	   		oController.getView().byId("tabTeam").setModel(oModel);
             	   		oController.oModelTeam = oModel;
             	   		});
-            	   }else{
-            		   MessageToast.show("ToDo: Agregar llamado a WS de equipo");
-            	   }
+            //	   }else{
+           // 		   MessageToast.show("ToDo: Agregar llamado a WS de equipo");
+           // 	   }
                
             },
             
