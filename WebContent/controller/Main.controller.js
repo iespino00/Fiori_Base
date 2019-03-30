@@ -34,15 +34,17 @@ sap.ui.define([
 	        	//	MessageToast.show("ToDo: Agregar llamado a WS de tareas");
 	        		$.ajax({
 	                    type: "GET",
-	                    url: "",
+	                    url: "http://webide.dudev.mx/dudev/webide/pro/com.dudev.SDY/appi",
 	                    datatype: "json",
 	                    cache: "false",
 	                    data: {
-
-	                                        }
-			                }).done(function(oResponse){
+	                    	   dvsn: "TASK",
+	                    	   opn: "GAO"
+	                           }
+			                }).done(function(oResponse)
+			                		{
 		
-			                                }).fail(function(){
+			                        }).fail(function(){
 			                    //Handle errors
 			                }).always(function(){
 		
