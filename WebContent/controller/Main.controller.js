@@ -9,6 +9,7 @@ sap.ui.define([
     	
     	isMockRun: true,
     	taskSelected : true,
+    	oModelTeam: null,
 
             /**
          * Event that will be called when the view is initialized
@@ -27,6 +28,7 @@ sap.ui.define([
 	        		$.getJSON("./model/mock/tasks.json", function(json){
 	            		var oModel = new JSONModel(json);
 	            		oController.getView().byId("tabTasks").setModel(oModel);
+	            		
 	            	});
 	        	}else{
 	        		MessageToast.show("ToDo: Agregar llamado a WS de tareas");
@@ -41,6 +43,7 @@ sap.ui.define([
             	   		$.getJSON("./model/mock/team.json" ,function(json){
             	   		var oModel = new JSONModel(json);
             	   		oController.getView().byId("tabTeam").setModel(oModel);
+            	   		oController.oModelTeam = oModel;
             	   		});
             	   }else{
             		   MessageToast.show("ToDo: Agregar llamado a WS de equipo");
@@ -91,6 +94,7 @@ sap.ui.define([
 	            //Funciones de Formulario
 	            onOpenForm: function(){
 	            	var oDialog = this._getFormDialog();
+	            	sap.ui.getCore().byId("cbUserFTask").setModel(this.oModelTeam);
 	            	oDialog.open();
 	            	
 	            },
