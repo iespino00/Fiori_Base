@@ -86,7 +86,24 @@ sap.ui.define([
 	                oBinding.filter([new sap.ui.model.Filter([
 	                	new sap.ui.model.Filter("Name", sap.ui.model.FilterOperator.Contains, data) // en data va la informacion que va filtrando
 	                ], false)]); //false nos obliga a que todas las condiciones se cumplan para que se filtre
+	            },
+	            
+	            //Funciones de Formulario
+	            onOpenForm: function(){
+	            	
+	            	
+	            },
+	            
+	            //Funcion para obtener el fragmento
+	            _getFormDialog: function(){
+	            	if(!this._oFormDialog)
+	            		{
+	            		  this._oFormDialog = sap.ui.xmlfragment("com.dudev.UI5C.view.fragments.FormTask", this);
+	            		  this.getView().addDependent(this._oFormDialog); //Aparecera sobre esta vista.
+	            		}
+	            	return this._oFormDialog;
 	            }
+	            
 	          
 
             });
