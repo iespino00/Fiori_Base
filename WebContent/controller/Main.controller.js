@@ -140,12 +140,13 @@ sap.ui.define([
 	            onConfirmForm: function()
 	            {
 	            	
-	            	var oName = sap.ui.getCore().byId("txtNameFTask").getValue();
+	            	var oName = sap.ui.getCore().byId("txtTitleFTask").getValue();
 	                var oUser = sap.ui.getCore().byId("cbUserFTask").getSelectedKey();
 	                var oDate = sap.ui.getCore().byId("dpDateFTask").getValue();
 	                var oStatus = sap.ui.getCore().byId("cbStatusFTask").getSelectedKey();
 	                var oProgress = sap.ui.getCore().byId("slProgressFTask").getValue();
 	                
+	                var oController = this;
 	            	$.ajax({
 	                    type: "GET",
 	                    url: "http://webide.dudev.mx/dudev/webide/pro/com.dudev.SDY/appi",
@@ -153,12 +154,20 @@ sap.ui.define([
 	                    cache: "false",
 	                    data: {
 	                    	   dvsn: "TASK",
-	                    	   opn: "AT"
+	                    	   opn: "AT",
+	                    	   //enviado parametros recibidos del 
+	                    	   t: oName,
+	                    	   u: oUser,
+	                    	   d: oDate,
+	                    	   s: oStatus,
+	                    	   p: oProgress
 	                           }
 			                }).done(function(oResponse)
 			                		{
 			                	var oModel = new JSONModel(oResponse);
-			                	oController.getView().byId("tabTasks").setModel(oModel);
+			                	MessageToas.show(oResponse.text); // en un message se mostrara la respuesta del servidor
+			                	
+			                	oController.onCloseForm
 			                        }).fail(function(){
 			                    //Handle errors
 			                }).always(function(){
