@@ -50,7 +50,7 @@
 	           		    	<cells>
 	           		    		<ObjectIdentifier title="{Name}" text="{Date}"></ObjectIdentifier>
 	           		    		<Image width="40px" src="{Photo}" tooltip="{User}" class="roundImage"></Image>
-	           		    		<ProgressIndicator percentValue="{Progress}" displayValue="{Progress}%"></ProgressIndicator>
+	           		    		<ProgressIndicator percentValue="{=parseInt(${Progress})}" displayValue="{Progress}%"></ProgressIndicator>
 	           		    		<dv:DVStatus text="{Status}" color="{StatusColor}"></dv:DVStatus>
 	           		    	</cells> 	
 	           		    </ColumnListItem>
