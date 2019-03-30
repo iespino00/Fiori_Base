@@ -62,11 +62,29 @@
 	                                }
 	                     },
 	                     
-	           "routes" : [],
+	           "routes" : [
+		                       {
+			                       "pattern":"",
+			                       "name":"mainRoute",
+			                       "target":"main"
+		                       },
+		                       {
+			                       "pattern":"userDetail",
+			                       "name":"userDetailRoute",
+			                       "target":"userDetail"
+		                       }
+	                       
+	                      ],
 	           
 	           "targets" : {
 	                       "notFound": {
 	                                   "viewName": "notFound"
+	                                   },
+	                        "main"   : {
+	                                   "viewName": "Main"
+	                                   },
+	                        "userDetail": {
+	                                   "viewName": "UserDetail"
 	                                   }
 	                       
 	                       } 
