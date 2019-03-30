@@ -205,6 +205,19 @@ sap.ui.define([
 	            
 	            onCloseDetail: function(){
 	           	 this._getDetailDialog().close();
+	            },
+	            
+	            onSelectUser: function(oEvent)
+	            {
+	            	//Evento -> Control -> Modelo -> Object
+	            	var oObject = oEvent.getSource().getBindingContext().getObject();
+	                var oController = this;
+	                
+	                //Esperar 300 milisegundos
+	                setTimeout(function(){
+	                	                var oRouter = sap.ui.core.UIComponent.getRouterFor(oController); // Obteniendo el Router
+	                	                 oRouter.navTo("userDetailRoute");
+	                                     }, 300);
 	            }
 	            
 	          
