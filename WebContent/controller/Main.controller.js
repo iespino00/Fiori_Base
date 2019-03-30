@@ -111,6 +111,11 @@ sap.ui.define([
 	            
 	            onCloseForm: function(){
 	            	this._getFormDialog().close();
+	            },
+	            
+	            onProgressChange: function(){
+	            	var slProgress = sap.ui.getCore().byId("slProgressFTask").getValue();
+	            	sap.ui.getCore().byId("onProgressFTask").setNumber(slProgress);
 	            }
 	            
 	          
