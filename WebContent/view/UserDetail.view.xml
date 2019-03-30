@@ -34,7 +34,31 @@
 					  <subSections>
 					    <ObjectPageSubSection>
 					       <blocks>
-					       	<m:Text text="Mostrar tabla de tareas"></m:Text>
+					       		<m:Table
+                                        id="tabTasks"
+                                        items="{/Tasks}"
+                                        growing="true" growingTriggerText="Show More..." growingThreshold="100">
+                                        <m:columns>
+                                            <m:Column vAlign="Middle">
+                                                <m:Label text="Task" design="Bold"/>
+                                            </m:Column>
+                                            <m:Column vAlign="Middle" hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                                <m:Label text="Progress" design="Bold"/>
+                                            </m:Column>
+                                            <m:Column vAlign="Middle" hAlign="Center" minScreenWidth="Desktop">
+                                                <m:Label text="Status" design="Bold"/>
+                                            </m:Column>
+                                        </m:columns>
+                                        <m:items>
+                                            <m:ColumnListItem>
+                                                <m:cells>
+                                                    <m:ObjectIdentifier title="{Name}" text="{Date}"/>
+                                                    <m:ProgressIndicator percentValue="{=parseInt(${Progress})}" displayValue="{Progress}%" showValue="true" state="None"/>
+                                                    <dv:DVStatus text="{Status}" color="{StatusColor}"/>
+                                                </m:cells>
+                                            </m:ColumnListItem>
+                                        </m:items>
+                                   </m:Table>
 					       </blocks>
 					    </ObjectPageSubSection>
 					  </subSections>
