@@ -5,9 +5,9 @@
 	displayBlock="true">
 
 	<App id="UI5CApp" class="UI5C">
-		<pages>
+	<!--  	<pages>
 			<mvc:XMLView viewName="com.dudev.UI5C.view.Main"/>
-		</pages>
+		</pages>  -->
 	</App>
 
 </mvc:View>
