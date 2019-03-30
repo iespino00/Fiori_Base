@@ -21,7 +21,10 @@
   	              <f:FormElement>
   	                <l:VerticalLayout>
   	                  <Label text="Title"></Label>
-  	                  <input id="txtTitleFTask"></input>
+  	                  <input id="txtTitleFTask" maxLength="50"></input>
+  	                  <l:layoutData>
+  	                    <l:GridData span="L6 M6 S12"></l:GridData>
+  	                  </l:layoutData>
   	                </l:VerticalLayout>
   	              </f:FormElement>
   	            </f:formElements>
