@@ -1,0 +1,13 @@
+<core:View
+    controllerName="com.dudev.UI5C.controller.UserDetail"
+    xmlns = "sap.uxap"
+    xmlns:core = "sap.ui.core"
+    xmlns:m = "sap.m"
+    xmlns:layout = "sap.ui.layout"
+    xmlns:dv="com.dudev.UI5C.control">
+    <m:Page showHeader="true" title="Project Management" class="whitePage" showNavButton="true" navButtonPress="onBack">
+        <m:content>
+			<Text text="TEXTO DE DETALLE TEST"></Text>
+        </m:content>
+    </m:Page>
+</core:View>
