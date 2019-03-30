@@ -7,7 +7,32 @@
     xmlns:dv="com.dudev.UI5C.control">
     <m:Page showHeader="true" title="Project Management" class="whitePage" showNavButton="true" navButtonPress="onBack">
         <m:content>
-			<m:Text text="TEXTO DE DETALLE TEST"></m:Text>
+			
+			<ObjectPageLayout showTitleInHeaderContent="true" >
+                <headerTitle>
+                    <ObjectPageHeader id="ophDetUserDetail"
+                                      headerDesign = "Dark"
+                                      objectImageURI = "{/User/Photo}"
+                                       objectImageShape = "Circle"
+                                       objectTitle = "{/User/Name}"
+                                      objectSubtitle = "{/User/Role}"
+                                      isObjectTitleAlwaysVisible = "false"
+                                      isObjectSubtitleAlwaysVisible = "false">
+                    </ObjectPageHeader>
+                </headerTitle>
+                <headerContent>
+                    <layout:VerticalLayout>
+                        <m:ObjectAttribute title="Project" text="{/User/Project}" class="sapUiTinyMarginTop"/>
+                        <m:ObjectAttribute title="Email" text="{/User/Email}"/>
+                        <m:ObjectAttribute title="Phone" text="{/User/Phone}"/>
+                        <m:ObjectAttribute title="Manager" text="{/User/Manager}"/>
+                    </layout:VerticalLayout>
+                </headerContent>
+
+
+             </ObjectPageLayout>
+			
+			
         </m:content>
     </m:Page>
 </core:View>
