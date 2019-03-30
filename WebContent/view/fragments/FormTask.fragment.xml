@@ -41,6 +41,49 @@
   	                </l:VerticalLayout>
   	              </f:FormElement>
   	              
+  	              <f:FormElement>
+                     <l:VerticalLayout>
+                        <Label text="Date"/>
+                          <DatePicker id="dpDateFTask" valueFormat="yyyy-MM-dd" displayFormat="dd/MM/yyyy"/>
+                        <l:layoutData>
+                          <l:GridData span="L6 M6 S12"/>
+                        </l:layoutData>
+                     </l:VerticalLayout>
+                  </f:FormElement>
+
+                   <f:FormElement>
+                                                <l:VerticalLayout>
+                                                    <Label text="Status"/>
+                                                    <ComboBox id="cbStatusFTask" width="100%">
+                                                        <core:Item key="1" text="In Progress"/>
+                                                        <core:Item key="2" text="Stuck"/>
+                                                        <core:Item key="3" text="Completed"/>
+                                                    </ComboBox>
+                                                    <l:layoutData>
+                                                        <l:GridData span="L6 M6 S12"/>
+                                                    </l:layoutData>
+                                                </l:VerticalLayout>
+                   </f:FormElement>
+
+                   <f:FormElement>
+                                                <l:VerticalLayout>
+                                                    <Label text="Progress"/>
+                                                    <Slider id="slProgressFTask" liveChange="onProgressChange" progress="true" showHandleTooltip="true" value="50" width="100%" min="0" max="100"/>
+                                                    <l:layoutData>
+                                                        <l:GridData span="L6 M6 S10"/>
+                                                    </l:layoutData>
+                                                </l:VerticalLayout>
+                   </f:FormElement>
+
+                    <f:FormElement>
+                                                <l:VerticalLayout>
+                                                    <ObjectNumber id="onProgressFTask" class="sapUiSmallMarginTop" number="50" unit="%"/>
+                                                    <l:layoutData>
+                                                        <l:GridData span="L6 M6 S2"/>
+                                                    </l:layoutData>
+                                                </l:VerticalLayout>
+                    </f:FormElement>
+  	              
   	            </f:formElements>
   	            
   	          </f:FormContainer>
