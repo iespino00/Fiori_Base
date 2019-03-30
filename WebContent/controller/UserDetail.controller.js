@@ -17,12 +17,14 @@ sap.ui.define([
          },
                     
         //Evento llamado cada vez que se navega a esta vista
-        onPageLoaded : function()
+        onPageLoaded : function(oEvent)
         {
-        	this._loadDetail();
+        	//Get user code from url
+        	var userCode = oEvent.getParameter("arguments").code;
+        	this._loadDetail(userCode);
         },   
                     
-        _loadDetail : function()
+        _loadDetail : function(userCode)
         {
         	
         },            
