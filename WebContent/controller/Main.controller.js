@@ -135,6 +135,37 @@ sap.ui.define([
 	            onProgressChange: function(){
 	            	var slProgress = sap.ui.getCore().byId("slProgressFTask").getValue();
 	            	sap.ui.getCore().byId("onProgressFTask").setNumber(slProgress);
+	            },
+	            
+	            onConfirmForm: function()
+	            {
+	            	
+	            	var oName = sap.ui.getCore().byId("txtNameFTask").getValue();
+	                var oUser = sap.ui.getCore().byId("cbUserFTask").getSelectedKey();
+	                var oDate = sap.ui.getCore().byId("dpDateFTask").getValue();
+	                var oStatus = sap.ui.getCore().byId("cbStatusFTask").getSelectedKey();
+	                var oProgress = sap.ui.getCore().byId("slProgressFTask").getValue();
+	                
+	            	$.ajax({
+	                    type: "GET",
+	                    url: "http://webide.dudev.mx/dudev/webide/pro/com.dudev.SDY/appi",
+	                    datatype: "json",
+	                    cache: "false",
+	                    data: {
+	                    	   dvsn: "TASK",
+	                    	   opn: "AT"
+	                           }
+			                }).done(function(oResponse)
+			                		{
+			                	var oModel = new JSONModel(oResponse);
+			                	oController.getView().byId("tabTasks").setModel(oModel);
+			                        }).fail(function(){
+			                    //Handle errors
+			                }).always(function(){
+		
+			                });	
+	            	
+	            	
 	            }
 	            
 	          
