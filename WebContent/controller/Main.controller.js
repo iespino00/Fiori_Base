@@ -7,7 +7,7 @@ sap.ui.define([
 
         return Controller.extend("com.dudev.UI5C.controller.Main",{
     	
-    	isMockRun: true,
+    	isMockRun: false,
     	taskSelected : true,
     	oModelTeam: null,
 
@@ -43,7 +43,8 @@ sap.ui.define([
 	                           }
 			                }).done(function(oResponse)
 			                		{
-		
+			                	var oModel = new JSONModel(oResponse);
+			                	oController.getView().byId("tabTasks").setModel(oModel);
 			                        }).fail(function(){
 			                    //Handle errors
 			                }).always(function(){
