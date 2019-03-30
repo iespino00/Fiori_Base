@@ -55,8 +55,8 @@
 	                     "routerClass": "sap.m.routing.Router",
 	                     "viewType": "XML",
 	                     "viewPath": "com.dudev.UI5C.view",
-	                     "controlId":"",
-	                     "controlAggregation":"",
+	                     "controlId":"UI5CApp",
+	                     "controlAggregation":"pages",
 	                     "bypassed":{
 	                                "target":"notFound"
 	                                }
