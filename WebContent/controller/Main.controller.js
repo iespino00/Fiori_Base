@@ -31,7 +31,23 @@ sap.ui.define([
 	            		
 	            	});
 	        	}else{
-	        		MessageToast.show("ToDo: Agregar llamado a WS de tareas");
+	        	//	MessageToast.show("ToDo: Agregar llamado a WS de tareas");
+	        		$.ajax({
+	                    type: "GET",
+	                    url: "",
+	                    datatype: "json",
+	                    cache: "false",
+	                    data: {
+
+	                                        }
+			                }).done(function(oResponse){
+		
+			                                }).fail(function(){
+			                    //Handle errors
+			                }).always(function(){
+		
+			                });
+	        		
 	        	     }
             },
             
