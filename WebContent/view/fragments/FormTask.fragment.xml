@@ -32,9 +32,9 @@
   	              <f:FormElement>
   	                <l:VerticalLayout>
   	                  <Label text="User"></Label>
-  	                 <Combobox id="cbUserFTask" width="100%" items="{/Team}">
+  	                 <ComboBox id="cbUserFTask" width="100%" items="{/Team}">
   	                 <core:Item key="{Code}" text="{Name}"></core:Item>
-  	                 </Combobox>
+  	                 </ComboBox>
   	                  <l:layoutData>
   	                    <l:GridData span="L6 M6 S12"></l:GridData>
   	                  </l:layoutData>
