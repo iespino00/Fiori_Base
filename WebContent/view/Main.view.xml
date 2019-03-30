@@ -46,7 +46,7 @@
 	           		  </columns>
 	           		  
 	           		  <items>
-	           		    <ColumnListItem type="Navigation" vAlign="Middle">
+	           		    <ColumnListItem type="Navigation" press="onSelectTask" vAlign="Middle">
 	           		    	<cells>
 	           		    		<ObjectIdentifier title="{Name}" text="{Date}"></ObjectIdentifier>
 	           		    		<Image width="40px" src="{Photo}" tooltip="{User}" class="roundImage"></Image>
